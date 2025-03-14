@@ -1,0 +1,6 @@
+[package]
+name = "litetl_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
