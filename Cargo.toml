@@ -4,3 +4,17 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+# 异步
+tokio = {version = "1.32.0", features = ["full"]}
+futures = "0.3.28"
+# 序列化
+serde = "1.0.188"
+
+# 数据库驱动
+oracle = "0.6.3"
+mysql = "26.0.0"
+clickhouse = "0.13.2"
+mongodb = "3.2.1"
+tiberius = "0.12.3"
+postgres = "0.19.10"
+
