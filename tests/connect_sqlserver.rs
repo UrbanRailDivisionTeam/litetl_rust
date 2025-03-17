@@ -1,9 +1,10 @@
-use tiberius::Client;
-use tiberius::Config;
+use futures::stream::{self, StreamExt};
+use tiberius::{Client, Config, AuthMethod};
+use tokio::net::TcpStream;
 
-static CONN_STR: &str = "server=tcp:127.0.0.1\\SQL2022D;IntegratedSecurity=true;TrustServerCertificate=true";
+#[test] 
+async fn main(){
+    // 提取数据
+    let source_data = extract().await?;
 
-#[test]
-fn main(){
-    println!("hello word");
 }
