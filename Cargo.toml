@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+anyhow = "1.0"
+chrono = "0.4"
 # 异步
 tokio = {version = "1.32.0", features = ["full"]}
 futures = "0.3.28"
