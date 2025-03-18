@@ -7,6 +7,8 @@ use crate::connect::LiteConnectConfig;
 // Oracle异步连接池
 pub struct OraclePool {
     pool: Arc<Mutex<Vec<Connection>>>,
+    max_conn_num: usize,
+    max_reconn_timeout: usize,
     connect_config: LiteConnectConfig,
 }
 impl OraclePool {
